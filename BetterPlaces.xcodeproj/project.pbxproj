@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDC61C1713ED9BEA00A19B86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC61C1613ED9BEA00A19B86 /* UIKit.framework */; };
+		DDC61C1913ED9BEA00A19B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC61C1813ED9BEA00A19B86 /* Foundation.framework */; };
+		DDC61C1B13ED9BEA00A19B86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC61C1A13ED9BEA00A19B86 /* CoreGraphics.framework */; };
+		DDC61C1D13ED9BEA00A19B86 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC61C1C13ED9BEA00A19B86 /* CoreData.framework */; };
+		DDC61C2313ED9BEA00A19B86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDC61C2113ED9BEA00A19B86 /* InfoPlist.strings */; };
+		DDC61C2513ED9BEA00A19B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C2413ED9BEA00A19B86 /* main.m */; };
+		DDC61C2913ED9BEA00A19B86 /* BetterPlacesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C2813ED9BEA00A19B86 /* BetterPlacesAppDelegate.m */; };
+		DDC61C2C13ED9BEA00A19B86 /* BetterPlaces.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C2A13ED9BEA00A19B86 /* BetterPlaces.xcdatamodeld */; };
+		DDC61C3013ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C2F13ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPhone.m */; };
+		DDC61C3313ED9BEA00A19B86 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC61C3113ED9BEA00A19B86 /* MainWindow_iPhone.xib */; };
+		DDC61C3713ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C3613ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.m */; };
+		DDC61C3A13ED9BEA00A19B86 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC61C3813ED9BEA00A19B86 /* MainWindow_iPad.xib */; };
+		DDC61C4213ED9BEA00A19B86 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC61C4113ED9BEA00A19B86 /* SenTestingKit.framework */; };
+		DDC61C4313ED9BEA00A19B86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC61C1613ED9BEA00A19B86 /* UIKit.framework */; };
+		DDC61C4413ED9BEA00A19B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC61C1813ED9BEA00A19B86 /* Foundation.framework */; };
+		DDC61C4513ED9BEA00A19B86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC61C1A13ED9BEA00A19B86 /* CoreGraphics.framework */; };
+		DDC61C4613ED9BEA00A19B86 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC61C1C13ED9BEA00A19B86 /* CoreData.framework */; };
+		DDC61C4E13ED9BEA00A19B86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDC61C4C13ED9BEA00A19B86 /* InfoPlist.strings */; };
+		DDC61C5013ED9BEA00A19B86 /* BetterPlacesTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DDC61C4F13ED9BEA00A19B86 /* BetterPlacesTests.h */; };
+		DDC61C5213ED9BEA00A19B86 /* BetterPlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C5113ED9BEA00A19B86 /* BetterPlacesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDC61C4713ED9BEA00A19B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC61C0913ED9BEA00A19B86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC61C1113ED9BEA00A19B86;
+			remoteInfo = BetterPlaces;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDC61C1213ED9BEA00A19B86 /* BetterPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC61C1613ED9BEA00A19B86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DDC61C1813ED9BEA00A19B86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DDC61C1A13ED9BEA00A19B86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DDC61C1C13ED9BEA00A19B86 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DDC61C2013ED9BEA00A19B86 /* BetterPlaces-Info.plist */ = {isa = PBXFileReference; path = "BetterPlaces-Info.plist"; sourceTree = "<group>"; };
+		DDC61C2213ED9BEA00A19B86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDC61C2413ED9BEA00A19B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDC61C2613ED9BEA00A19B86 /* BetterPlaces-Prefix.pch */ = {isa = PBXFileReference; path = "BetterPlaces-Prefix.pch"; sourceTree = "<group>"; };
+		DDC61C2713ED9BEA00A19B86 /* BetterPlacesAppDelegate.h */ = {isa = PBXFileReference; path = BetterPlacesAppDelegate.h; sourceTree = "<group>"; };
+		DDC61C2813ED9BEA00A19B86 /* BetterPlacesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetterPlacesAppDelegate.m; sourceTree = "<group>"; };
+		DDC61C2B13ED9BEA00A19B86 /* BetterPlaces.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BetterPlaces.xcdatamodel; sourceTree = "<group>"; };
+		DDC61C2E13ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = BetterPlacesAppDelegate_iPhone.h; path = iPhone/BetterPlacesAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		DDC61C2F13ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BetterPlacesAppDelegate_iPhone.m; path = iPhone/BetterPlacesAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		DDC61C3213ED9BEA00A19B86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		DDC61C3513ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.h */ = {isa = PBXFileReference; name = BetterPlacesAppDelegate_iPad.h; path = iPad/BetterPlacesAppDelegate_iPad.h; sourceTree = "<group>"; };
+		DDC61C3613ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BetterPlacesAppDelegate_iPad.m; path = iPad/BetterPlacesAppDelegate_iPad.m; sourceTree = "<group>"; };
+		DDC61C3913ED9BEA00A19B86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		DDC61C4013ED9BEA00A19B86 /* BetterPlacesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterPlacesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC61C4113ED9BEA00A19B86 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DDC61C4B13ED9BEA00A19B86 /* BetterPlacesTests-Info.plist */ = {isa = PBXFileReference; path = "BetterPlacesTests-Info.plist"; sourceTree = "<group>"; };
+		DDC61C4D13ED9BEA00A19B86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDC61C4F13ED9BEA00A19B86 /* BetterPlacesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetterPlacesTests.h; sourceTree = "<group>"; };
+		DDC61C5113ED9BEA00A19B86 /* BetterPlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetterPlacesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDC61C0F13ED9BEA00A19B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC61C1713ED9BEA00A19B86 /* UIKit.framework in Frameworks */,
+				DDC61C1913ED9BEA00A19B86 /* Foundation.framework in Frameworks */,
+				DDC61C1B13ED9BEA00A19B86 /* CoreGraphics.framework in Frameworks */,
+				DDC61C1D13ED9BEA00A19B86 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC61C3C13ED9BEA00A19B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC61C4213ED9BEA00A19B86 /* SenTestingKit.framework in Frameworks */,
+				DDC61C4313ED9BEA00A19B86 /* UIKit.framework in Frameworks */,
+				DDC61C4413ED9BEA00A19B86 /* Foundation.framework in Frameworks */,
+				DDC61C4513ED9BEA00A19B86 /* CoreGraphics.framework in Frameworks */,
+				DDC61C4613ED9BEA00A19B86 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDC61C0713ED9BEA00A19B86 = {
+			isa = PBXGroup;
+			children = (
+				DDC61C1E13ED9BEA00A19B86 /* BetterPlaces */,
+				DDC61C4913ED9BEA00A19B86 /* BetterPlacesTests */,
+				DDC61C1513ED9BEA00A19B86 /* Frameworks */,
+				DDC61C1313ED9BEA00A19B86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDC61C1313ED9BEA00A19B86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDC61C1213ED9BEA00A19B86 /* BetterPlaces.app */,
+				DDC61C4013ED9BEA00A19B86 /* BetterPlacesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDC61C1513ED9BEA00A19B86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDC61C1613ED9BEA00A19B86 /* UIKit.framework */,
+				DDC61C1813ED9BEA00A19B86 /* Foundation.framework */,
+				DDC61C1A13ED9BEA00A19B86 /* CoreGraphics.framework */,
+				DDC61C1C13ED9BEA00A19B86 /* CoreData.framework */,
+				DDC61C4113ED9BEA00A19B86 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDC61C1E13ED9BEA00A19B86 /* BetterPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				DDC61C2713ED9BEA00A19B86 /* BetterPlacesAppDelegate.h */,
+				DDC61C2813ED9BEA00A19B86 /* BetterPlacesAppDelegate.m */,
+				DDC61C2A13ED9BEA00A19B86 /* BetterPlaces.xcdatamodeld */,
+				DDC61C2D13ED9BEA00A19B86 /* iPhone */,
+				DDC61C3413ED9BEA00A19B86 /* iPad */,
+				DDC61C1F13ED9BEA00A19B86 /* Supporting Files */,
+			);
+			path = BetterPlaces;
+			sourceTree = "<group>";
+		};
+		DDC61C1F13ED9BEA00A19B86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDC61C2013ED9BEA00A19B86 /* BetterPlaces-Info.plist */,
+				DDC61C2113ED9BEA00A19B86 /* InfoPlist.strings */,
+				DDC61C2413ED9BEA00A19B86 /* main.m */,
+				DDC61C2613ED9BEA00A19B86 /* BetterPlaces-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDC61C2D13ED9BEA00A19B86 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				DDC61C2E13ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPhone.h */,
+				DDC61C2F13ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPhone.m */,
+				DDC61C3113ED9BEA00A19B86 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		DDC61C3413ED9BEA00A19B86 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				DDC61C3513ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.h */,
+				DDC61C3613ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.m */,
+				DDC61C3813ED9BEA00A19B86 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		DDC61C4913ED9BEA00A19B86 /* BetterPlacesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDC61C4F13ED9BEA00A19B86 /* BetterPlacesTests.h */,
+				DDC61C5113ED9BEA00A19B86 /* BetterPlacesTests.m */,
+				DDC61C4A13ED9BEA00A19B86 /* Supporting Files */,
+			);
+			path = BetterPlacesTests;
+			sourceTree = "<group>";
+		};
+		DDC61C4A13ED9BEA00A19B86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDC61C4B13ED9BEA00A19B86 /* BetterPlacesTests-Info.plist */,
+				DDC61C4C13ED9BEA00A19B86 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDC61C1113ED9BEA00A19B86 /* BetterPlaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC61C5513ED9BEA00A19B86 /* Build configuration list for PBXNativeTarget "BetterPlaces" */;
+			buildPhases = (
+				DDC61C0E13ED9BEA00A19B86 /* Sources */,
+				DDC61C0F13ED9BEA00A19B86 /* Frameworks */,
+				DDC61C1013ED9BEA00A19B86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetterPlaces;
+			productName = BetterPlaces;
+			productReference = DDC61C1213ED9BEA00A19B86 /* BetterPlaces.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDC61C3F13ED9BEA00A19B86 /* BetterPlacesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC61C5813ED9BEA00A19B86 /* Build configuration list for PBXNativeTarget "BetterPlacesTests" */;
+			buildPhases = (
+				DDC61C3B13ED9BEA00A19B86 /* Sources */,
+				DDC61C3C13ED9BEA00A19B86 /* Frameworks */,
+				DDC61C3D13ED9BEA00A19B86 /* Resources */,
+				DDC61C3E13ED9BEA00A19B86 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDC61C4813ED9BEA00A19B86 /* PBXTargetDependency */,
+			);
+			name = BetterPlacesTests;
+			productName = BetterPlacesTests;
+			productReference = DDC61C4013ED9BEA00A19B86 /* BetterPlacesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDC61C0913ED9BEA00A19B86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = MoeCode;
+			};
+			buildConfigurationList = DDC61C0C13ED9BEA00A19B86 /* Build configuration list for PBXProject "BetterPlaces" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DDC61C0713ED9BEA00A19B86;
+			productRefGroup = DDC61C1313ED9BEA00A19B86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDC61C1113ED9BEA00A19B86 /* BetterPlaces */,
+				DDC61C3F13ED9BEA00A19B86 /* BetterPlacesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDC61C1013ED9BEA00A19B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC61C2313ED9BEA00A19B86 /* InfoPlist.strings in Resources */,
+				DDC61C3313ED9BEA00A19B86 /* MainWindow_iPhone.xib in Resources */,
+				DDC61C3A13ED9BEA00A19B86 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC61C3D13ED9BEA00A19B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC61C4E13ED9BEA00A19B86 /* InfoPlist.strings in Resources */,
+				DDC61C5013ED9BEA00A19B86 /* BetterPlacesTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DDC61C3E13ED9BEA00A19B86 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDC61C0E13ED9BEA00A19B86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC61C2513ED9BEA00A19B86 /* main.m in Sources */,
+				DDC61C2913ED9BEA00A19B86 /* BetterPlacesAppDelegate.m in Sources */,
+				DDC61C2C13ED9BEA00A19B86 /* BetterPlaces.xcdatamodeld in Sources */,
+				DDC61C3013ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPhone.m in Sources */,
+				DDC61C3713ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC61C3B13ED9BEA00A19B86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC61C5213ED9BEA00A19B86 /* BetterPlacesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDC61C4813ED9BEA00A19B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDC61C1113ED9BEA00A19B86 /* BetterPlaces */;
+			targetProxy = DDC61C4713ED9BEA00A19B86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDC61C2113ED9BEA00A19B86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC61C2213ED9BEA00A19B86 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DDC61C3113ED9BEA00A19B86 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC61C3213ED9BEA00A19B86 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		DDC61C3813ED9BEA00A19B86 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC61C3913ED9BEA00A19B86 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		DDC61C4C13ED9BEA00A19B86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC61C4D13ED9BEA00A19B86 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDC61C5313ED9BEA00A19B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDC61C5413ED9BEA00A19B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDC61C5613ED9BEA00A19B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BetterPlaces/BetterPlaces-Prefix.pch";
+				INFOPLIST_FILE = "BetterPlaces/BetterPlaces-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DDC61C5713ED9BEA00A19B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BetterPlaces/BetterPlaces-Prefix.pch";
+				INFOPLIST_FILE = "BetterPlaces/BetterPlaces-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DDC61C5913ED9BEA00A19B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BetterPlaces.app/BetterPlaces";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BetterPlaces/BetterPlaces-Prefix.pch";
+				INFOPLIST_FILE = "BetterPlacesTests/BetterPlacesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DDC61C5A13ED9BEA00A19B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BetterPlaces.app/BetterPlaces";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BetterPlaces/BetterPlaces-Prefix.pch";
+				INFOPLIST_FILE = "BetterPlacesTests/BetterPlacesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDC61C0C13ED9BEA00A19B86 /* Build configuration list for PBXProject "BetterPlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC61C5313ED9BEA00A19B86 /* Debug */,
+				DDC61C5413ED9BEA00A19B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC61C5513ED9BEA00A19B86 /* Build configuration list for PBXNativeTarget "BetterPlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC61C5613ED9BEA00A19B86 /* Debug */,
+				DDC61C5713ED9BEA00A19B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DDC61C5813ED9BEA00A19B86 /* Build configuration list for PBXNativeTarget "BetterPlacesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC61C5913ED9BEA00A19B86 /* Debug */,
+				DDC61C5A13ED9BEA00A19B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DDC61C2A13ED9BEA00A19B86 /* BetterPlaces.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DDC61C2B13ED9BEA00A19B86 /* BetterPlaces.xcdatamodel */,
+			);
+			currentVersion = DDC61C2B13ED9BEA00A19B86 /* BetterPlaces.xcdatamodel */;
+			path = BetterPlaces.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DDC61C0913ED9BEA00A19B86 /* Project object */;
+}
