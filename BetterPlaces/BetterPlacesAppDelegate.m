@@ -44,6 +44,7 @@
     
     [nav1 release];
     [nav2 release];
+    [nav3 release];
     
     [self.window addSubview:tbc.view];
     [self.window makeKeyAndVisible];
