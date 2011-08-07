@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11A511" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Photo" representedClassName="Photo">
+        <attribute name="dateupload" optional="YES" attributeType="Date"/>
+        <attribute name="dateuploadSection" optional="YES" attributeType="String"/>
+        <attribute name="favorite" optional="YES" attributeType="Boolean"/>
+        <attribute name="lastViewed" optional="YES" attributeType="Date"/>
+        <attribute name="lastViewedSection" optional="YES" attributeType="String"/>
+        <attribute name="photoDescription" optional="YES" attributeType="String"/>
+        <attribute name="photoURL" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="uniqueId" optional="YES" attributeType="String"/>
+        <relationship name="takenAt" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="photos" inverseEntity="Place"/>
+    </entity>
+    <entity name="Place" representedClassName="Place">
+        <attribute name="hasFavorites" optional="YES" attributeType="Boolean"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="placeDescription" optional="YES" attributeType="String"/>
+        <attribute name="placeId" optional="YES" attributeType="String"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="takenAt" inverseEntity="Photo"/>
+    </entity>
+    <elements>
+        <element name="Photo" positionX="-1872" positionY="-1449" width="128" height="195"/>
+        <element name="Place" positionX="-2117" positionY="-1251" width="128" height="120"/>
+    </elements>
 </model>

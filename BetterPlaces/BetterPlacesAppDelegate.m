@@ -7,6 +7,9 @@
 //
 
 #import "BetterPlacesAppDelegate.h"
+#import "PlacesTableViewController.h"
+#import "RecentPhotosTableViewController.h"
+#import "FavoritePlacesTableViewController.h"
 
 @implementation BetterPlacesAppDelegate
 
@@ -17,7 +20,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    UINavigationController *nav1 = [[UINavigationController alloc] init];
+    PlacesTableViewController *ptvc = [[PlacesTableViewController alloc] initInManagedObjectContext:self.managedObjectContext];
+    ptvc.title = @"Places";
+    [nav1 pushViewController:ptvc animated:NO];
+    [ptvc release];
+    
+    UINavigationController *nav2 = [[UINavigationController alloc] init];
+    RecentPhotosTableViewController *rptvc = [[RecentPhotosTableViewController alloc] initInManagedObjectContext:self.managedObjectContext];
+    rptvc.title = @"Recent";
+    [nav2 pushViewController:rptvc animated:NO];
+    [rptvc release];
+    
+    UINavigationController *nav3 = [[UINavigationController alloc] init];
+    FavoritePlacesTableViewController *fptvc = [[FavoritePlacesTableViewController alloc] initInManagedObjectContext:self.managedObjectContext];
+    fptvc.title = @"Favorites";
+    [nav3 pushViewController:fptvc animated:NO];
+    [fptvc release];
+    
+    UITabBarController *tbc = [[UITabBarController alloc] init];
+    tbc.viewControllers = [NSArray arrayWithObjects:nav1, nav2, nav3, nil];
+    tabBarController = tbc;
+    
+    [nav1 release];
+    [nav2 release];
+    
+    [self.window addSubview:tbc.view];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -60,6 +88,7 @@
 
 - (void)dealloc
 {
+    [tabBarController release];
     [_window release];
     [__managedObjectContext release];
     [__managedObjectModel release];

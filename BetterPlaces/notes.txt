@@ -1,0 +1,73 @@
+Notes on the BetterPlaces app:
+
+Requirements:
+
+    
+1: Create model to manage stored data
+
+    Photo
+        title                   (String)
+        photoDescription        (String)
+        uniqueId                (String)
+        favorite                (BOOL)
+        lastViewed              (1970 value if never viewed)
+        lastViewedSection       (For sections)
+        dataURL                 (String)
+        takenAt                 (Place)
+        dateupload              (Date)
+        dateuploadSection       (String)
+    Place
+        name                (String)
+        hasFavorites        (BOOL)
+        photos              (NSSet of Photos)
+
+2: Add button to save a photo as a favorite to PhotoView. This will be on the PhotoViewController's navigation bar.
+
+The favorites view controller becomes a photo table view controller 
+
+3: Add a new tab to the UITabBarViewController with a controller for the Favorites.
+
+4: Store all the recents information to CD rather than NSUserDefaults.
+
+This can be one by just using the lastViewed element of the Photo list... so it becomes a table view of photos with the predicate last viewed < 48 hours ago.
+
+5: Cache photo data for favorites on the file system... straight forward.
+
+6: Make sure Top Places is sorted... but of course it already is, I win.
+
+
+---
+
+Design notes:
+
+All photo lists derive from the CoreDataTableViewController... except for the one that shows 
+
+
+PlacesTableViewController -
+    Modify to take a NSManagedObjectContext.
+
+PlacePhotosTableViewController -
+    Modify to take a NSManagedObjectContext.
+    Modify to create Photos upon photo selection.
+
+- TablesViewControllers from CoreDataTableViewController
+ RecentTableViewController
+    Sorted by last viewed, grouped by last viewed description
+
+ FavoritePlacesTableViewController
+    Sorted by Place Name
+
+ FavoritePhotosInAFavoritePlaceTableViewController
+    Sorted by... ?
+
+? When do we create Photo objects?
+    In the PlacePhotosTableViewController when they are about to be displayed.
+
+? When do we create a Place object?
+    When the Photo object is created if it doesn't already exist.
+
+
+Modify PhotoViewController to take a Photo object.
+
+Order of work:
+

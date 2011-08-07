@@ -27,6 +27,25 @@
 		DDC61C4E13ED9BEA00A19B86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDC61C4C13ED9BEA00A19B86 /* InfoPlist.strings */; };
 		DDC61C5013ED9BEA00A19B86 /* BetterPlacesTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DDC61C4F13ED9BEA00A19B86 /* BetterPlacesTests.h */; };
 		DDC61C5213ED9BEA00A19B86 /* BetterPlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C5113ED9BEA00A19B86 /* BetterPlacesTests.m */; };
+		DDC61C6313ED9C2F00A19B86 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C6213ED9C2F00A19B86 /* FlickrFetcher.m */; };
+		DDC61C7113ED9C4B00A19B86 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C6613ED9C4B00A19B86 /* NSObject+SBJSON.m */; };
+		DDC61C7213ED9C4B00A19B86 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C6813ED9C4B00A19B86 /* NSString+SBJSON.m */; };
+		DDC61C7313ED9C4B00A19B86 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C6A13ED9C4B00A19B86 /* SBJSON.m */; };
+		DDC61C7413ED9C4B00A19B86 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C6C13ED9C4B00A19B86 /* SBJsonBase.m */; };
+		DDC61C7513ED9C4B00A19B86 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C6E13ED9C4B00A19B86 /* SBJsonParser.m */; };
+		DDC61C7613ED9C4B00A19B86 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C7013ED9C4B00A19B86 /* SBJsonWriter.m */; };
+		DDC61C7A13ED9C7D00A19B86 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C7913ED9C7D00A19B86 /* CoreDataTableViewController.m */; };
+		DDC61C7D13ED9CBB00A19B86 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C7C13ED9CBB00A19B86 /* PhotoViewController.m */; };
+		DDC61C8913ED9CD300A19B86 /* PlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C8113ED9CD300A19B86 /* PlacesTableViewController.m */; };
+		DDC61C8A13ED9CD300A19B86 /* PhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C8313ED9CD300A19B86 /* PhotoTableViewController.m */; };
+		DDC61C8B13ED9CD300A19B86 /* PlacePhotosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C8513ED9CD300A19B86 /* PlacePhotosTableViewController.m */; };
+		DDC61C8E13ED9FAF00A19B86 /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDC61C8D13ED9FAF00A19B86 /* notes.txt */; };
+		DDC61C9113EDC38D00A19B86 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C9013EDC38C00A19B86 /* Place.m */; };
+		DDC61C9713EDC3E200A19B86 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C9613EDC3E200A19B86 /* Photo.m */; };
+		DDC61C9A13EDDA0300A19B86 /* RecentPhotosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C9913EDDA0300A19B86 /* RecentPhotosTableViewController.m */; };
+		DDC61C9C13EDF46900A19B86 /* Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC61C9B13EDF46900A19B86 /* Checkmark.png */; };
+		DDC61C9F13EDFA3500A19B86 /* FavoritePlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C9E13EDFA3500A19B86 /* FavoritePlacesTableViewController.m */; };
+		DDC61CA213EDFBA000A19B86 /* FavoritePhotosForFavoritePlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC61CA113EDFB9F00A19B86 /* FavoritePhotosForFavoritePlacesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,25 +64,63 @@
 		DDC61C1813ED9BEA00A19B86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DDC61C1A13ED9BEA00A19B86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DDC61C1C13ED9BEA00A19B86 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DDC61C2013ED9BEA00A19B86 /* BetterPlaces-Info.plist */ = {isa = PBXFileReference; path = "BetterPlaces-Info.plist"; sourceTree = "<group>"; };
+		DDC61C2013ED9BEA00A19B86 /* BetterPlaces-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BetterPlaces-Info.plist"; sourceTree = "<group>"; };
 		DDC61C2213ED9BEA00A19B86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDC61C2413ED9BEA00A19B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DDC61C2613ED9BEA00A19B86 /* BetterPlaces-Prefix.pch */ = {isa = PBXFileReference; path = "BetterPlaces-Prefix.pch"; sourceTree = "<group>"; };
-		DDC61C2713ED9BEA00A19B86 /* BetterPlacesAppDelegate.h */ = {isa = PBXFileReference; path = BetterPlacesAppDelegate.h; sourceTree = "<group>"; };
+		DDC61C2613ED9BEA00A19B86 /* BetterPlaces-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BetterPlaces-Prefix.pch"; sourceTree = "<group>"; };
+		DDC61C2713ED9BEA00A19B86 /* BetterPlacesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetterPlacesAppDelegate.h; sourceTree = "<group>"; };
 		DDC61C2813ED9BEA00A19B86 /* BetterPlacesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetterPlacesAppDelegate.m; sourceTree = "<group>"; };
 		DDC61C2B13ED9BEA00A19B86 /* BetterPlaces.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BetterPlaces.xcdatamodel; sourceTree = "<group>"; };
-		DDC61C2E13ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = BetterPlacesAppDelegate_iPhone.h; path = iPhone/BetterPlacesAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		DDC61C2E13ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BetterPlacesAppDelegate_iPhone.h; path = iPhone/BetterPlacesAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		DDC61C2F13ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BetterPlacesAppDelegate_iPhone.m; path = iPhone/BetterPlacesAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		DDC61C3213ED9BEA00A19B86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		DDC61C3513ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.h */ = {isa = PBXFileReference; name = BetterPlacesAppDelegate_iPad.h; path = iPad/BetterPlacesAppDelegate_iPad.h; sourceTree = "<group>"; };
+		DDC61C3513ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BetterPlacesAppDelegate_iPad.h; path = iPad/BetterPlacesAppDelegate_iPad.h; sourceTree = "<group>"; };
 		DDC61C3613ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BetterPlacesAppDelegate_iPad.m; path = iPad/BetterPlacesAppDelegate_iPad.m; sourceTree = "<group>"; };
 		DDC61C3913ED9BEA00A19B86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		DDC61C4013ED9BEA00A19B86 /* BetterPlacesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterPlacesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC61C4113ED9BEA00A19B86 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DDC61C4B13ED9BEA00A19B86 /* BetterPlacesTests-Info.plist */ = {isa = PBXFileReference; path = "BetterPlacesTests-Info.plist"; sourceTree = "<group>"; };
+		DDC61C4B13ED9BEA00A19B86 /* BetterPlacesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BetterPlacesTests-Info.plist"; sourceTree = "<group>"; };
 		DDC61C4D13ED9BEA00A19B86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDC61C4F13ED9BEA00A19B86 /* BetterPlacesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetterPlacesTests.h; sourceTree = "<group>"; };
 		DDC61C5113ED9BEA00A19B86 /* BetterPlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetterPlacesTests.m; sourceTree = "<group>"; };
+		DDC61C6013ED9C2F00A19B86 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		DDC61C6113ED9C2F00A19B86 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		DDC61C6213ED9C2F00A19B86 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		DDC61C6413ED9C4B00A19B86 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		DDC61C6513ED9C4B00A19B86 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		DDC61C6613ED9C4B00A19B86 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		DDC61C6713ED9C4B00A19B86 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		DDC61C6813ED9C4B00A19B86 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		DDC61C6913ED9C4B00A19B86 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		DDC61C6A13ED9C4B00A19B86 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		DDC61C6B13ED9C4B00A19B86 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		DDC61C6C13ED9C4B00A19B86 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		DDC61C6D13ED9C4B00A19B86 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		DDC61C6E13ED9C4B00A19B86 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		DDC61C6F13ED9C4B00A19B86 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		DDC61C7013ED9C4B00A19B86 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		DDC61C7813ED9C7D00A19B86 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		DDC61C7913ED9C7D00A19B86 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		DDC61C7B13ED9CBB00A19B86 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		DDC61C7C13ED9CBB00A19B86 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		DDC61C8013ED9CD300A19B86 /* PlacesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesTableViewController.h; sourceTree = "<group>"; };
+		DDC61C8113ED9CD300A19B86 /* PlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesTableViewController.m; sourceTree = "<group>"; };
+		DDC61C8213ED9CD300A19B86 /* PhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewController.h; sourceTree = "<group>"; };
+		DDC61C8313ED9CD300A19B86 /* PhotoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewController.m; sourceTree = "<group>"; };
+		DDC61C8413ED9CD300A19B86 /* PlacePhotosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacePhotosTableViewController.h; sourceTree = "<group>"; };
+		DDC61C8513ED9CD300A19B86 /* PlacePhotosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacePhotosTableViewController.m; sourceTree = "<group>"; };
+		DDC61C8D13ED9FAF00A19B86 /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
+		DDC61C8F13EDC38C00A19B86 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		DDC61C9013EDC38C00A19B86 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		DDC61C9513EDC3E200A19B86 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		DDC61C9613EDC3E200A19B86 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		DDC61C9813EDDA0300A19B86 /* RecentPhotosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotosTableViewController.h; sourceTree = "<group>"; };
+		DDC61C9913EDDA0300A19B86 /* RecentPhotosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotosTableViewController.m; sourceTree = "<group>"; };
+		DDC61C9B13EDF46900A19B86 /* Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checkmark.png; sourceTree = "<group>"; };
+		DDC61C9D13EDFA3500A19B86 /* FavoritePlacesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritePlacesTableViewController.h; sourceTree = "<group>"; };
+		DDC61C9E13EDFA3500A19B86 /* FavoritePlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritePlacesTableViewController.m; sourceTree = "<group>"; };
+		DDC61CA013EDFB9F00A19B86 /* FavoritePhotosForFavoritePlacesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritePhotosForFavoritePlacesTableViewController.h; sourceTree = "<group>"; };
+		DDC61CA113EDFB9F00A19B86 /* FavoritePhotosForFavoritePlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritePhotosForFavoritePlacesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +184,31 @@
 		DDC61C1E13ED9BEA00A19B86 /* BetterPlaces */ = {
 			isa = PBXGroup;
 			children = (
+				DDC61C5F13ED9C1400A19B86 /* Other Sources */,
 				DDC61C2713ED9BEA00A19B86 /* BetterPlacesAppDelegate.h */,
 				DDC61C2813ED9BEA00A19B86 /* BetterPlacesAppDelegate.m */,
-				DDC61C2A13ED9BEA00A19B86 /* BetterPlaces.xcdatamodeld */,
+				DDC61C8013ED9CD300A19B86 /* PlacesTableViewController.h */,
+				DDC61C8113ED9CD300A19B86 /* PlacesTableViewController.m */,
+				DDC61C8213ED9CD300A19B86 /* PhotoTableViewController.h */,
+				DDC61C8313ED9CD300A19B86 /* PhotoTableViewController.m */,
+				DDC61C8413ED9CD300A19B86 /* PlacePhotosTableViewController.h */,
+				DDC61C8513ED9CD300A19B86 /* PlacePhotosTableViewController.m */,
+				DDC61C7B13ED9CBB00A19B86 /* PhotoViewController.h */,
+				DDC61C7C13ED9CBB00A19B86 /* PhotoViewController.m */,
+				DDC61C9813EDDA0300A19B86 /* RecentPhotosTableViewController.h */,
+				DDC61C9913EDDA0300A19B86 /* RecentPhotosTableViewController.m */,
+				DDC61C9D13EDFA3500A19B86 /* FavoritePlacesTableViewController.h */,
+				DDC61C9E13EDFA3500A19B86 /* FavoritePlacesTableViewController.m */,
+				DDC61CA013EDFB9F00A19B86 /* FavoritePhotosForFavoritePlacesTableViewController.h */,
+				DDC61CA113EDFB9F00A19B86 /* FavoritePhotosForFavoritePlacesTableViewController.m */,
+				DDC61C9513EDC3E200A19B86 /* Photo.h */,
+				DDC61C9613EDC3E200A19B86 /* Photo.m */,
+				DDC61C8F13EDC38C00A19B86 /* Place.h */,
+				DDC61C9013EDC38C00A19B86 /* Place.m */,
 				DDC61C2D13ED9BEA00A19B86 /* iPhone */,
 				DDC61C3413ED9BEA00A19B86 /* iPad */,
 				DDC61C1F13ED9BEA00A19B86 /* Supporting Files */,
+				DDC61C8D13ED9FAF00A19B86 /* notes.txt */,
 			);
 			path = BetterPlaces;
 			sourceTree = "<group>";
@@ -140,6 +216,7 @@
 		DDC61C1F13ED9BEA00A19B86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DDC61C9B13EDF46900A19B86 /* Checkmark.png */,
 				DDC61C2013ED9BEA00A19B86 /* BetterPlaces-Info.plist */,
 				DDC61C2113ED9BEA00A19B86 /* InfoPlist.strings */,
 				DDC61C2413ED9BEA00A19B86 /* main.m */,
@@ -161,6 +238,7 @@
 		DDC61C3413ED9BEA00A19B86 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				DDC61C2A13ED9BEA00A19B86 /* BetterPlaces.xcdatamodeld */,
 				DDC61C3513ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.h */,
 				DDC61C3613ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.m */,
 				DDC61C3813ED9BEA00A19B86 /* MainWindow_iPad.xib */,
@@ -185,6 +263,39 @@
 				DDC61C4C13ED9BEA00A19B86 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDC61C5F13ED9C1400A19B86 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DDC61C7813ED9C7D00A19B86 /* CoreDataTableViewController.h */,
+				DDC61C7913ED9C7D00A19B86 /* CoreDataTableViewController.m */,
+				DDC61C7713ED9C4F00A19B86 /* JSON */,
+				DDC61C6013ED9C2F00A19B86 /* FlickrAPIKey.h */,
+				DDC61C6113ED9C2F00A19B86 /* FlickrFetcher.h */,
+				DDC61C6213ED9C2F00A19B86 /* FlickrFetcher.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		DDC61C7713ED9C4F00A19B86 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				DDC61C6413ED9C4B00A19B86 /* JSON.h */,
+				DDC61C6513ED9C4B00A19B86 /* NSObject+SBJSON.h */,
+				DDC61C6613ED9C4B00A19B86 /* NSObject+SBJSON.m */,
+				DDC61C6713ED9C4B00A19B86 /* NSString+SBJSON.h */,
+				DDC61C6813ED9C4B00A19B86 /* NSString+SBJSON.m */,
+				DDC61C6913ED9C4B00A19B86 /* SBJSON.h */,
+				DDC61C6A13ED9C4B00A19B86 /* SBJSON.m */,
+				DDC61C6B13ED9C4B00A19B86 /* SBJsonBase.h */,
+				DDC61C6C13ED9C4B00A19B86 /* SBJsonBase.m */,
+				DDC61C6D13ED9C4B00A19B86 /* SBJsonParser.h */,
+				DDC61C6E13ED9C4B00A19B86 /* SBJsonParser.m */,
+				DDC61C6F13ED9C4B00A19B86 /* SBJsonWriter.h */,
+				DDC61C7013ED9C4B00A19B86 /* SBJsonWriter.m */,
+			);
+			name = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +371,8 @@
 				DDC61C2313ED9BEA00A19B86 /* InfoPlist.strings in Resources */,
 				DDC61C3313ED9BEA00A19B86 /* MainWindow_iPhone.xib in Resources */,
 				DDC61C3A13ED9BEA00A19B86 /* MainWindow_iPad.xib in Resources */,
+				DDC61C8E13ED9FAF00A19B86 /* notes.txt in Resources */,
+				DDC61C9C13EDF46900A19B86 /* Checkmark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +413,23 @@
 				DDC61C2C13ED9BEA00A19B86 /* BetterPlaces.xcdatamodeld in Sources */,
 				DDC61C3013ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPhone.m in Sources */,
 				DDC61C3713ED9BEA00A19B86 /* BetterPlacesAppDelegate_iPad.m in Sources */,
+				DDC61C6313ED9C2F00A19B86 /* FlickrFetcher.m in Sources */,
+				DDC61C7113ED9C4B00A19B86 /* NSObject+SBJSON.m in Sources */,
+				DDC61C7213ED9C4B00A19B86 /* NSString+SBJSON.m in Sources */,
+				DDC61C7313ED9C4B00A19B86 /* SBJSON.m in Sources */,
+				DDC61C7413ED9C4B00A19B86 /* SBJsonBase.m in Sources */,
+				DDC61C7513ED9C4B00A19B86 /* SBJsonParser.m in Sources */,
+				DDC61C7613ED9C4B00A19B86 /* SBJsonWriter.m in Sources */,
+				DDC61C7A13ED9C7D00A19B86 /* CoreDataTableViewController.m in Sources */,
+				DDC61C7D13ED9CBB00A19B86 /* PhotoViewController.m in Sources */,
+				DDC61C8913ED9CD300A19B86 /* PlacesTableViewController.m in Sources */,
+				DDC61C8A13ED9CD300A19B86 /* PhotoTableViewController.m in Sources */,
+				DDC61C8B13ED9CD300A19B86 /* PlacePhotosTableViewController.m in Sources */,
+				DDC61C9113EDC38D00A19B86 /* Place.m in Sources */,
+				DDC61C9713EDC3E200A19B86 /* Photo.m in Sources */,
+				DDC61C9A13EDDA0300A19B86 /* RecentPhotosTableViewController.m in Sources */,
+				DDC61C9F13EDFA3500A19B86 /* FavoritePlacesTableViewController.m in Sources */,
+				DDC61CA213EDFBA000A19B86 /* FavoritePhotosForFavoritePlacesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +607,7 @@
 				DDC61C5713ED9BEA00A19B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDC61C5813ED9BEA00A19B86 /* Build configuration list for PBXNativeTarget "BetterPlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +616,7 @@
 				DDC61C5A13ED9BEA00A19B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
