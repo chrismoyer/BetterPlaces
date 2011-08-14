@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DD30E59913F7967C00A8F5FE /* white_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = DD30E59813F7967C00A8F5FE /* white_thumb.png */; };
-		DD30E5A013F79CD300A8F5FE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD30E59E13F79CD300A8F5FE /* icon.png */; };
-		DD30E5A113F79CD300A8F5FE /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD30E59F13F79CD300A8F5FE /* icon@2x.png */; };
 		DD30E5A313F79CDF00A8F5FE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD30E5A213F79CDF00A8F5FE /* icon.png */; };
 		DD30E5A513F79CE500A8F5FE /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD30E5A413F79CE500A8F5FE /* icon@2x.png */; };
 		DDC61C1713ED9BEA00A19B86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC61C1613ED9BEA00A19B86 /* UIKit.framework */; };
@@ -65,8 +63,6 @@
 
 /* Begin PBXFileReference section */
 		DD30E59813F7967C00A8F5FE /* white_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_thumb.png; sourceTree = "<group>"; };
-		DD30E59E13F79CD300A8F5FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		DD30E59F13F79CD300A8F5FE /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		DD30E5A213F79CDF00A8F5FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		DD30E5A413F79CE500A8F5FE /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		DDC61C1213ED9BEA00A19B86 /* BetterPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,8 +224,6 @@
 		DDC61C1F13ED9BEA00A19B86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DD30E59E13F79CD300A8F5FE /* icon.png */,
-				DD30E59F13F79CD300A8F5FE /* icon@2x.png */,
 				DD30E59813F7967C00A8F5FE /* white_thumb.png */,
 				DDC61C9B13EDF46900A19B86 /* Checkmark.png */,
 				DDC61C2013ED9BEA00A19B86 /* BetterPlaces-Info.plist */,
@@ -389,8 +383,6 @@
 				DDC61C8E13ED9FAF00A19B86 /* notes.txt in Resources */,
 				DDC61C9C13EDF46900A19B86 /* Checkmark.png in Resources */,
 				DD30E59913F7967C00A8F5FE /* white_thumb.png in Resources */,
-				DD30E5A013F79CD300A8F5FE /* icon.png in Resources */,
-				DD30E5A113F79CD300A8F5FE /* icon@2x.png in Resources */,
 				DD30E5A313F79CDF00A8F5FE /* icon.png in Resources */,
 				DD30E5A513F79CE500A8F5FE /* icon@2x.png in Resources */,
 			);
