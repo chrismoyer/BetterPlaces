@@ -7,4 +7,4 @@
 
 // Put your Flickr API key here or nothing will work.
 
-#define FlickrAPIKey @"xxx"
+#define FlickrAPIKey @"d3a89bd0f6c75d4f12cf39a18ab21c33"
