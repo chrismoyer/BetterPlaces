@@ -63,8 +63,8 @@
 
 /* Begin PBXFileReference section */
 		DD30E59813F7967C00A8F5FE /* white_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_thumb.png; sourceTree = "<group>"; };
-		DD30E5A213F79CDF00A8F5FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		DD30E5A413F79CE500A8F5FE /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		DD30E5A213F79CDF00A8F5FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		DD30E5A413F79CE500A8F5FE /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
 		DDC61C1213ED9BEA00A19B86 /* BetterPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC61C1613ED9BEA00A19B86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DDC61C1813ED9BEA00A19B86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -159,8 +159,6 @@
 		DDC61C0713ED9BEA00A19B86 = {
 			isa = PBXGroup;
 			children = (
-				DD30E5A413F79CE500A8F5FE /* icon@2x.png */,
-				DD30E5A213F79CDF00A8F5FE /* icon.png */,
 				DDC61C1E13ED9BEA00A19B86 /* BetterPlaces */,
 				DDC61C4913ED9BEA00A19B86 /* BetterPlacesTests */,
 				DDC61C1513ED9BEA00A19B86 /* Frameworks */,
@@ -224,6 +222,8 @@
 		DDC61C1F13ED9BEA00A19B86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD30E5A413F79CE500A8F5FE /* icon@2x.png */,
+				DD30E5A213F79CDF00A8F5FE /* icon.png */,
 				DD30E59813F7967C00A8F5FE /* white_thumb.png */,
 				DDC61C9B13EDF46900A19B86 /* Checkmark.png */,
 				DDC61C2013ED9BEA00A19B86 /* BetterPlaces-Info.plist */,
