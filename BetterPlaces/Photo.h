@@ -24,6 +24,10 @@
 @property (nonatomic, retain) Place *takenAt;
 @property (nonatomic, retain) NSString * dateuploadSection;
 @property (nonatomic, retain) NSDate * dateupload;
+@property (nonatomic, retain) NSString * thumbnailURL;
+@property (nonatomic, retain) NSData * thumbnailData;
+
+
 
 + (Photo *)photoFromFlickrData:(NSDictionary *)flickrData 
                  inFlickrPlace:(NSDictionary *)flickrPlace 
@@ -33,8 +37,12 @@
 + (NSString *)descriptionForFlickrData:(NSDictionary *)flickrData;
 
 - (void)viewNow;
-- (NSData *)fetchData;
+- (NSData *)imageData;
+- (NSData *)thumbData;
+
+- (void)processImageDataWithBlock:(void (^)(NSData *imageData))processImage;
 - (void)makeFavoriteWithImageData:(NSData *)data;
 - (void)clearFavorite;
 
 @end
+ 

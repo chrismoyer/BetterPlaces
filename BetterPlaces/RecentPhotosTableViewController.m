@@ -86,4 +86,20 @@
     
 }
 
+- (UIImage *)thumbnailImageForManagedObject:(NSManagedObject *)managedObject
+{
+    Photo *photo = (Photo *)managedObject;
+
+    NSData *data = photo.thumbData;
+    UIImage *image = nil;
+    
+    
+	if (data) {
+        image = [[[UIImage alloc] initWithData:data] autorelease];
+    } else {
+        image = [UIImage imageNamed:@"white_thumb.png"];
+    }    
+    return image;
+}
+
 @end

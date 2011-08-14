@@ -56,13 +56,26 @@
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
-    NSArray *sortedPlaces = [[FlickrFetcher topPlaces] sortedArrayUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"_content" ascending:YES]]];
+    dispatch_queue_t downloadQueue = dispatch_queue_create("Flickr Downloader", NULL);
+    dispatch_async(downloadQueue, ^{
+
+        NSArray *sortedPlaces = [[FlickrFetcher topPlaces] sortedArrayUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"_content" ascending:YES]]];
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self loadPlaces:sortedPlaces];
+            [self.tableView reloadData];
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        });
+    });
+    dispatch_release(downloadQueue);
+    
+    
+//    NSArray *sortedPlaces = [[FlickrFetcher topPlaces] sortedArrayUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"_content" ascending:YES]]];
     
     //NSLog(@"sorted places received from Flickr: %@", sortedPlaces);
     
-    [self loadPlaces:sortedPlaces];
     
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+
 //    NSLog(@"%@", places);
 }
 
@@ -235,17 +248,32 @@
   
     NSDictionary *place = [self placeForIndexPath:indexPath];
 
-    // Look up photos from Flickr
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSArray *photos = [FlickrFetcher photosAtPlace:[place objectForKey:@"place_id"]];
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-
-    
     PlacePhotosTableViewController *pptvc = [[PlacePhotosTableViewController alloc] initInManagedObjectContext:context]; 
-    pptvc.photos = photos;
+
     pptvc.place = place;
     pptvc.title = [Place primaryLocation:[place objectForKey:@"_content"]];
 
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+
+    // Look up images from Flickr in background thread
+    
+    dispatch_queue_t downloadQueue = dispatch_queue_create("Flickr Downloader", NULL);
+    dispatch_async(downloadQueue, ^{
+        
+        // Look up photos from Flickr
+        NSArray *photos = [FlickrFetcher photosAtPlace:[place objectForKey:@"place_id"]];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+
+            pptvc.photos = photos;
+            [pptvc.tableView reloadData];
+            
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+
+        });
+    });
+    dispatch_release(downloadQueue);
+    
     [self.navigationController pushViewController:pptvc animated:YES];
     [pptvc release];
 }

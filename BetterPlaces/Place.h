@@ -19,11 +19,12 @@
 + (NSString *)subLocation:(NSString *)location;
 
 
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSNumber * hasFavorites;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSNumber *hasFavorites;
 @property (nonatomic, retain) NSSet *photos;
-@property (nonatomic, retain) NSString * placeId;
-@property (nonatomic, retain) NSString * placeDescription;
+@property (nonatomic, retain) NSString *placeId;
+@property (nonatomic, retain) NSString *placeDescription;
+@property (nonatomic, retain) NSString * sectionName;
 
 
 @end

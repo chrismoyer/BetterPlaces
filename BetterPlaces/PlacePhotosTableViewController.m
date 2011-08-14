@@ -88,8 +88,6 @@
     pview.title = photo.title;
     pview.photo = photo;
     
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    
     [self.navigationController pushViewController:pview animated:YES];
     [pview release];
 }

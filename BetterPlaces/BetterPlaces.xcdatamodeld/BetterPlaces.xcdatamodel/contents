@@ -8,6 +8,8 @@
         <attribute name="lastViewedSection" optional="YES" attributeType="String"/>
         <attribute name="photoDescription" optional="YES" attributeType="String"/>
         <attribute name="photoURL" optional="YES" attributeType="String"/>
+        <attribute name="thumbnailData" optional="YES" attributeType="Binary"/>
+        <attribute name="thumbnailURL" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="uniqueId" optional="YES" attributeType="String"/>
         <relationship name="takenAt" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="photos" inverseEntity="Place"/>
@@ -17,6 +19,7 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="placeDescription" optional="YES" attributeType="String"/>
         <attribute name="placeId" optional="YES" attributeType="String"/>
+        <attribute name="sectionName" optional="YES" attributeType="String"/>
         <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="takenAt" inverseEntity="Photo"/>
     </entity>
     <elements>

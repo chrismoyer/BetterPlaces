@@ -15,6 +15,7 @@
     Photo *photo;
     UIImageView *imageView;
     UIScrollView *scrollView;
+    UIActivityIndicatorView *activityView;
     UIImage *image;
     NSManagedObjectContext *context;
 }
@@ -22,6 +23,7 @@
 @property (retain) Photo *photo;
 @property (retain) UIImageView *imageView;
 @property (retain) UIScrollView *scrollView;
+@property (retain) UIActivityIndicatorView *activityView;
 @property (retain) UIImage *image;
 @property (retain) NSManagedObjectContext *context;
 @property (retain) NSData *imageData;

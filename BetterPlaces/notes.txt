@@ -1,3 +1,27 @@
+
+August 7th
+
+Assignment 7... GCD
+
+Requirements
+
+1: display a thumbnail with every table row that represents a photo. Fetch them on demand.
+2: Use GCD to move all network activity out of the main thread.
+3: Favorites and Recents should have thumbnail data cached in Core Data.
+4: - 
+5: On the photo displace screen show an activity indicator when downloading
+6: Add alphabetical sections to favorite places
+
+
+
+
+
+
+
+------------
+
+August 6th
+
 Notes on the BetterPlaces app:
 
 Requirements:
@@ -69,5 +93,5 @@ PlacePhotosTableViewController -
 
 Modify PhotoViewController to take a Photo object.
 
-Order of work:
+
 

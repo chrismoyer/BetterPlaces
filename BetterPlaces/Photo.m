@@ -22,6 +22,10 @@
 @dynamic takenAt;
 @dynamic dateuploadSection;
 @dynamic dateupload;
+@dynamic thumbnailURL;
+@dynamic thumbnailData;
+
+
 
 
 + (Photo *)photoFromFlickrData:(NSDictionary *)flickrData 
@@ -46,6 +50,7 @@
         photo.lastViewed = [NSDate dateWithTimeIntervalSince1970:0];
         photo.lastViewedSection = @"";
         photo.photoURL = [FlickrFetcher urlStringForPhotoWithFlickrInfo:flickrData format:FlickrFetcherPhotoFormatLarge];
+        photo.thumbnailURL = [FlickrFetcher urlStringForPhotoWithFlickrInfo:flickrData format:FlickrFetcherPhotoFormatSquare];
         photo.dateupload = [NSDate dateWithTimeIntervalSince1970: [[flickrData objectForKey:@"dateupload"] doubleValue]];
         photo.dateuploadSection = [Photo ageDescriptionFromDate:photo.dateupload];
         photo.takenAt = [Place placeFromFlickrPlace:flickrPlace inManagedObjectContext:context];   
@@ -112,7 +117,7 @@
     return description;    
 }
 
-- (void)viewNow;
+- (void)viewNow
 {
     self.lastViewed = [NSDate date];
 }
@@ -125,36 +130,82 @@
     [[NSFileManager defaultManager] createFileAtPath:fileName contents:data attributes:nil];
 }
 
-- (NSData *)fetchData
+- (NSData *)cachedData
 {
-    NSData *imageData = nil;
+    NSData *data = nil;
     
-    // Check to see if the file is in the cache
     NSString *cacheDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-    
-    // Check to see if the cache directory exists
     NSString *fileName = [cacheDir stringByAppendingPathComponent:self.uniqueId];
     
     BOOL cacheFileExists = [[NSFileManager defaultManager] fileExistsAtPath:fileName];
     
-    NSLog(@"%@ exists: %@", fileName, [NSNumber numberWithBool:cacheFileExists]);
-
     if (cacheFileExists) {
         NSLog(@"Loading image data from file: %@", fileName);
-        imageData = [[NSFileManager defaultManager] contentsAtPath:fileName];
-    } else {
+        data = [[NSFileManager defaultManager] contentsAtPath:fileName];
+    } 
+    
+    return data;    
+}
+
+- (NSData *)imageData
+{
+    NSData *imageData = nil;
+    
+    imageData = [self cachedData];
+    
+    BOOL cacheFileExists = NO;
+    if (imageData) cacheFileExists = YES;
+    
+    if (!imageData) {
         NSLog(@"Loading image data from flickr: %@", self.photoURL);
         imageData = [FlickrFetcher imageDataForPhotoWithURLString:self.photoURL];
     }
     
-    NSLog(@"Photo is favorite: %@", self.favorite);
-    
     if ([self.favorite boolValue] && !cacheFileExists) {
-        NSLog(@"Writing image data to cache file: %@", fileName);
-        [[NSFileManager defaultManager] createFileAtPath:fileName contents:imageData attributes:nil];
+        [self cacheData:imageData];
     }
     
     return imageData;
+}
+
+- (void)processImageDataWithBlock:(void (^)(NSData *imageData))processImage
+{
+    dispatch_queue_t callerQueue = dispatch_get_current_queue();
+    dispatch_queue_t downloadQueue = dispatch_queue_create("Flickr Downloader In Photo", NULL);
+    dispatch_async(downloadQueue, ^{
+        NSData *imageData = [self imageData];
+        
+        dispatch_async(callerQueue, ^{
+            processImage(imageData);
+        });
+    });
+    dispatch_release(downloadQueue);
+}
+
+- (NSData *)thumbData
+{
+    NSData *data = nil;
+    
+    if (!self.thumbnailData) {
+        
+        NSString *url = self.thumbnailURL;
+        
+        dispatch_queue_t callerQueue = dispatch_get_current_queue();
+        dispatch_queue_t downloadQueue = dispatch_queue_create("Flickr Thumbnail Downloader In Photo", NULL);
+        dispatch_async(downloadQueue, ^{
+            NSData *thumbData = [FlickrFetcher imageDataForPhotoWithURLString:url];
+            
+            dispatch_async(callerQueue, ^{
+                self.thumbnailData = thumbData;
+            });
+        });        
+        dispatch_release(downloadQueue);
+        
+    } else {
+        data = self.thumbnailData;
+    }
+    
+    return data;
 }
 
 - (void)makeFavoriteWithImageData:(NSData *)data

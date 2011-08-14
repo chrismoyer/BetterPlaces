@@ -12,9 +12,11 @@
 {
     NSArray *photos;
     NSManagedObjectContext *context;
+    NSMutableDictionary *thumbDict;
 }
 
 @property (retain) NSArray *photos;
+@property (retain) NSMutableDictionary *thumbDict;
 
 - (NSDictionary *)photoForIndexPath:(NSIndexPath *)indexPath;
 - initInManagedObjectContext:(NSManagedObjectContext *)context;

@@ -35,7 +35,7 @@
     request.fetchBatchSize = 20;
     
     NSFetchedResultsController *frc = [[NSFetchedResultsController alloc]
-                                       initWithFetchRequest:request managedObjectContext:aContext sectionNameKeyPath:nil cacheName:nil];
+                                       initWithFetchRequest:request managedObjectContext:aContext sectionNameKeyPath:@"sectionName" cacheName:nil];
     
     [request release];
     

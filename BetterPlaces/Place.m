@@ -15,6 +15,8 @@
 @dynamic hasFavorites;
 @dynamic photos;
 @dynamic placeId;
+@dynamic sectionName;
+
 
 + (Place *)placeFromFlickrPlace:(NSDictionary *)flickrData inManagedObjectContext:(NSManagedObjectContext *) context
 {
@@ -32,7 +34,8 @@
         place.placeId = [flickrData objectForKey:@"place_id"];
         place.name = [Place primaryLocation:[flickrData objectForKey:@"_content"]];
         place.placeDescription = [Place subLocation:[flickrData objectForKey:@"_content"]];
-        place.hasFavorites = [NSNumber numberWithBool:NO];                
+        place.hasFavorites = [NSNumber numberWithBool:NO];   
+        place.sectionName = [place.name substringToIndex:1];
     }
     
     [request release];

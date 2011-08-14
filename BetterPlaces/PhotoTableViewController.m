@@ -9,21 +9,23 @@
 #import "PhotoTableViewController.h"
 #import "PhotoViewController.h"
 #import "Photo.h"
+#import "FlickrFetcher.h"
 
 
 @implementation PhotoTableViewController
 
-@synthesize photos;
+@synthesize photos, thumbDict;
 
 - (void)dealloc
 {
-    [photos release];
+    thumbDict = nil;
+    photos = nil;
     [super dealloc];
 }
 
 - (void)setup
 {
-    
+    self.thumbDict = [NSMutableDictionary dictionary];
 }
 
 - initInManagedObjectContext:(NSManagedObjectContext *)aContext
@@ -101,10 +103,6 @@
     return [photos count];
 }
 
-
-
-
-
 - (NSDictionary *)photoForIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary *photo = [photos objectAtIndex:indexPath.row];
@@ -113,6 +111,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"Loading cell for indexPath %@", indexPath);
+    
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -126,6 +126,28 @@
     cell.detailTextLabel.text = [Photo descriptionForFlickrData:photo];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
+    UIImage *thumbImage = [thumbDict objectForKey:[photo objectForKey:@"id"]];
+    
+    if (thumbImage) {
+        cell.imageView.image = thumbImage;        
+    } else {
+      
+        cell.imageView.image = [UIImage imageNamed:@"white_thumb.png"];
+        dispatch_queue_t downloadQueue = dispatch_queue_create("Flickr Downloader", NULL);
+        dispatch_async(downloadQueue, ^{
+            NSData *thumbData = [FlickrFetcher imageDataForPhotoWithFlickrInfo:photo format:FlickrFetcherPhotoFormatSquare];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                UIImage *thumbImage = [UIImage imageWithData:thumbData];
+                NSLog(@"Image Size: %fx%f", thumbImage.size.width, thumbImage.size.height);
+                
+                [self.thumbDict setObject:thumbImage forKey:[photo objectForKey:@"id"]];
+                
+                [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];    
+            });
+        });
+        dispatch_release(downloadQueue);
+    }    
     return cell;
 }
 
