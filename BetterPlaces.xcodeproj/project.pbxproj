@@ -89,7 +89,6 @@
 		DDC61C4D13ED9BEA00A19B86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDC61C4F13ED9BEA00A19B86 /* BetterPlacesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetterPlacesTests.h; sourceTree = "<group>"; };
 		DDC61C5113ED9BEA00A19B86 /* BetterPlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetterPlacesTests.m; sourceTree = "<group>"; };
-		DDC61C6013ED9C2F00A19B86 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
 		DDC61C6113ED9C2F00A19B86 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		DDC61C6213ED9C2F00A19B86 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 		DDC61C6413ED9C4B00A19B86 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -280,7 +279,6 @@
 				DDC61C7813ED9C7D00A19B86 /* CoreDataTableViewController.h */,
 				DDC61C7913ED9C7D00A19B86 /* CoreDataTableViewController.m */,
 				DDC61C7713ED9C4F00A19B86 /* JSON */,
-				DDC61C6013ED9C2F00A19B86 /* FlickrAPIKey.h */,
 				DDC61C6113ED9C2F00A19B86 /* FlickrFetcher.h */,
 				DDC61C6213ED9C2F00A19B86 /* FlickrFetcher.m */,
 			);
